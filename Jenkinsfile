@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh 'docker stop ${CONTAINER} | true'
                 sh 'docker rm ${CONTAINER} | true'
-                sh "docker rmi $(docker images | grep ${TAG})"
+                sh "docker rmi $(docker images | grep 'hieuppham/demo-fe')"
                 sh 'docker run -d --name ${CONTAINER} -p 9090:80 ${TAG}:${DATE}-${BUILD_NUMBER}'
             }
         }
