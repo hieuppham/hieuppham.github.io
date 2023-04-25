@@ -58,6 +58,17 @@
           <pattern id="pattern4r" patternUnits="userSpaceOnUse" x="365" width="562" height="366" viewBox="0 0 562 366">
             <image xlink:href="https://images.unsplash.com/photo-1508020963102-c6c723be5764?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width="600px" height="600px"/>
           </pattern>
+
+          <!-- Slide 5 -->
+          <pattern id="bg5" patternUnits="userSpaceOnUse" width="1920" height="1080" viewBox="0 0 1920 1080">
+            <image xlink:href="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1443&q=80" width="100%" height="100%"/>
+          </pattern>
+          <pattern id="pattern5l" patternUnits="userSpaceOnUse" width="562" height="366" viewBox="0 0 562 366">
+            <image xlink:href="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1443&q=80" width="600px" height="600px"/>
+          </pattern>
+          <pattern id="pattern5r" patternUnits="userSpaceOnUse" x="365" width="562" height="366" viewBox="0 0 562 366">
+            <image xlink:href="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" width="600px" height="600px"/>
+          </pattern>
         </defs>
       </svg>
 
@@ -137,11 +148,31 @@
         </div>
       </div>
 
+      <div class="slide" id="slide-5">
+        <svg class="slide__bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1920" height="1080">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#bg5)" />
+        </svg>
+        <div class="slide__images">
+          <div class="slide__image slide__image--left">
+            <svg viewBox="0 0 900 365" version="1.1"	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px">
+              <path d="M 0 0 L 0 365 L 351.2382 365 L 562 0 L 0 0 Z" fill="url(#pattern5l)"/>
+            </svg>
+          </div>
+
+          <div class="slide__image slide__image--right">
+            <svg viewBox="0 0 900 365" version="1.1"	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px">
+              <path d="M 900 365 L 900 0 L 548.7618 0 L 338 365 L 900 365 Z" fill="url(#pattern5r)"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
     <div class="slider__pagination">
       <a href="#slide-1" class="button">Desert</a>
       <a href="#slide-2" class="button">Ocean</a>
       <a href="#slide-3" class="button">Forest</a>
       <a href="#slide-4" class="button">Sky</a>
+      <a href="#slide-5" class="button">Cat</a>
     </div>
   </header>
 </body>
